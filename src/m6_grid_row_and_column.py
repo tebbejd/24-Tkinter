@@ -79,7 +79,7 @@ def main():
     e_button = ttk.Button(main_frame, text="Exit")
     e_button.grid(row=8, column=4)
     e_button['command'] = lambda: exit()
-    root.bind('<\>', lambda event: exit())
+    root.bind('<Escape>', lambda event: exit())
 
     root.mainloop()
 
